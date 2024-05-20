@@ -18,13 +18,26 @@ body {
   background-color: black;
   opacity: 0.8;
   height: 90%;
-  width: 40%;
+  width: 30%;
   display: grid;
   align-items: center;
   justify-content: center;
   border: 3px solid;
   border-radius: 50px;
   animation: borderAnimation 1s infinite alternate;
+  grid-template-columns:repeat(auto-fit, minmax(50%,1fr));
+  gap: 0.01rem;
+  max-width: 340px;
+  max-height: 1600px ;
+  min-height: 500px;
+}
+.caixa-filho {
+  display: grid;
+  max-width: 300px;
+  grid-template-columns:repeat(auto-fit, minmax(50%,1fr));
+  gap: 0.01rem;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 @keyframes borderAnimation {
